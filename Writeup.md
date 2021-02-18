@@ -73,7 +73,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This is lower than the accuracy on the test set of 93.5%. The incorrectly identified sign was the Slippery Road sign. This sign could have been difficult to identify because it features a fairly intricate shape of a car sliding. The other signs are easier because the shapes are relatively simple. The network mistook the intricate shape of the car for another detailed shape found in the wild animal crossing sign.
 
-For the Children Crossing sign, the top five soft max probabilites were:
+For the **Children Crossing** sign, the top five soft max probabilites were:
 | Probability | Prediction                            | 
 |:-----------:|:-------------------------------------:| 
 | 0.99999690  | Children Crossing                     |
@@ -82,12 +82,41 @@ For the Children Crossing sign, the top five soft max probabilites were:
 | 0.00000049  | Bicycles Crossing                     |
 | 0.00000001  | Right-of-way at the Next Intersection |
 
+For the **No Vehicles sign**, the top five soft max probabilites were:
+| Probability | Prediction          | 
+|:-----------:|:-------------------:| 
+| 0.99649800  | No Vehicles         |
+| 0.00116325  | Speed Limit 50km/h  |
+| 0.00114389  | No Passing          |
+| 0.00070669  | Speed Limit 100km/h |
+| 0.00018473  | Ahead Only          |
+
+For the **Priority Road** sign, the top five soft max probabilites were:
+| Probability | Prediction           | 
+|:-----------:|:--------------------:| 
+| 0.99912685  | Priority Road        |
+| 0.00083303  | Yield                |
+| 0.00002575  | Roundabout Mandatory |
+| 0.00001272  | Keep Right           |
+| 0.00000227  | No Passing           |
+
+For the **Slippery Road** sign, the top five soft max probabilites were:
+| Probability | Prediction                  | 
+|:-----------:|:---------------------------:| 
+| 0.99973339  | Wild Animal Crossing        |
+| 0.00024171  | Slippery Road               |
+| 0.00002285  | Double Curve                |
+| 0.00000180  | Bicycles Crossing           |
+| 0.00000018  | Dangerous Curve to the Left |
 
 
-
-
-
-
-
+For the **Speed Limit 30km/h** sign, the top five soft max probabilites were:
+| Probability | Prediction         | 
+|:-----------:|:------------------:| 
+| 0.99235392  | Speed Limit 30km/h |
+| 0.00682669  | Speed Limit 20km/h |
+| 0.00071048  | Speed Limit 50km/h |
+| 0.00004223  | Keep Right         |
+| 0.00003553  | Children Crossing  |
 
 
