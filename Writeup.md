@@ -37,3 +37,12 @@ My final model consisted of the following layers:
 | RELU                  |                                                    |
 | Dropout               | Keep probability is 75%                            |
 | Fully Connected       | Ouputs 43                                          |
+
+To train the model, I set `EPOCHS = 15`, `BATCH_SIZE = 128`, `dropout = 0.75`, `mu = 0`, `sigma = 0.1`, and `rate = 0.00075`.
+
+My final model results were:
+* Training set accuracy of 99.0%
+* Validation set accuracy of 95.1%
+* Test set accuracy of 93.5%
+
+In my first iteration of testing, I set `EPOCHS = 10` and `rate = 0.001`, which returned a validation set accuracy of 90.3%. I then decided to set `EPOCHS = 15` and `rate = 0.0001`, which returned a validation set accuracy of 77.4%. The accuracy rate was increasing past the 10th epoch, so I kept it at `EPOCHS = 15`. I then set `rate = 0.005` and got a validation set accuracy of 92.6%. Then, I added the dropout and initially set it to `dropout = 0.75`. Keeping `rate = 0.005`, adding the dropout gave me a validation set accuracy of 91.5%. I changed to `dropout = 0.5` and got a validation set accuracy of 87.6%. Because my accuracy was dropping, I decided to reverse some of my steps. I set `dropout = 0.75` and `rate = 0.00075`, and got a final validation set accuracy of 95.1%.
