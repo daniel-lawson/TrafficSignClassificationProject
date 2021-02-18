@@ -1,5 +1,10 @@
 [//]: # (Image References)
 [image1]: ./writeup_images/bar_chart.jpg "Bar Chart"
+[image2]: ./Test_images/children_crossing.jpg "Children Crossing Sign"
+[image3]: ./Test_images/no_vehicles.jpg "No Vehicles Sign"
+[image4]: ./Test_images/priority_road.jpg "Priority Road Sign"
+[image5]: ./Test_images/slippery_road.jpg "Slippery Road Sign"
+[image6]: ./Test_images/speed_limit.jpg "Speed Limit 30km/h Sign"
 
 # Writeup
 ## Data Set Summary adnd Exploration
@@ -46,3 +51,34 @@ My final model results were:
 * Test set accuracy of 93.5%
 
 In my first iteration of testing, I set `EPOCHS = 10` and `rate = 0.001`, which returned a validation set accuracy of 90.3%. I then decided to set `EPOCHS = 15` and `rate = 0.0001`, which returned a validation set accuracy of 77.4%. The accuracy rate was increasing past the 10th epoch, so I kept it at `EPOCHS = 15`. I then set `rate = 0.005` and got a validation set accuracy of 92.6%. Then, I added the dropout and initially set it to `dropout = 0.75`. Keeping `rate = 0.005`, adding the dropout gave me a validation set accuracy of 91.5%. I changed to `dropout = 0.5` and got a validation set accuracy of 87.6%. Because my accuracy was dropping, I decided to reverse some of my steps. I set `dropout = 0.75` and `rate = 0.00075`, and got a final validation set accuracy of 95.1%.
+
+## Test Model on New Images
+I found these 5 German traffic signs on Google:
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
+
+Here are the results of the prediction:
+
+| Image              | Prediction            | 
+|:------------------:|:---------------------:| 
+| Children Crossing  | Children Crossing     |
+| No Vehicles        | No Vehicles           |
+| Priority Road      | Priority Road         |
+| Slippery Road      | Wild Animals Crossing |
+| Speed Limit 30km/h | Speed Limit 30km/h    |
+
+
+
+
+
+
+
+
+
+
+
+
+
