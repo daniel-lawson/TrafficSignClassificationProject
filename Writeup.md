@@ -82,6 +82,8 @@ For the **Children Crossing** sign, the top five soft max probabilites were:
 | 0.00000049  | Bicycles Crossing                     |
 | 0.00000001  | Right-of-way at the Next Intersection |
 
+The network was very confident that it was a Chidlren Crossing sign.
+
 For the **No Vehicles sign**, the top five soft max probabilites were:
 | Probability | Prediction          | 
 |:-----------:|:-------------------:| 
@@ -90,6 +92,8 @@ For the **No Vehicles sign**, the top five soft max probabilites were:
 | 0.00114389  | No Passing          |
 | 0.00070669  | Speed Limit 100km/h |
 | 0.00018473  | Ahead Only          |
+
+The network was very confident that it was a No Vehicles sign.
 
 For the **Priority Road** sign, the top five soft max probabilites were:
 | Probability | Prediction           | 
@@ -100,6 +104,8 @@ For the **Priority Road** sign, the top five soft max probabilites were:
 | 0.00001272  | Keep Right           |
 | 0.00000227  | No Passing           |
 
+The network was very confident that it was a Priority Road sign.
+
 For the **Slippery Road** sign, the top five soft max probabilites were:
 | Probability | Prediction                  | 
 |:-----------:|:---------------------------:| 
@@ -109,6 +115,7 @@ For the **Slippery Road** sign, the top five soft max probabilites were:
 | 0.00000180  | Bicycles Crossing           |
 | 0.00000018  | Dangerous Curve to the Left |
 
+The network was very confident that it was a Wild Animal Crossing sign, however, that was incorrect. The Slippery Road sign was its second guess with a probability of only 0.024%.
 
 For the **Speed Limit 30km/h** sign, the top five soft max probabilites were:
 | Probability | Prediction         | 
@@ -119,4 +126,4 @@ For the **Speed Limit 30km/h** sign, the top five soft max probabilites were:
 | 0.00004223  | Keep Right         |
 | 0.00003553  | Children Crossing  |
 
-
+The network was very confident that it was a Speed Limit 30km/h sign.
