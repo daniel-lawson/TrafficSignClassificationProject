@@ -54,6 +54,7 @@ In my first iteration of testing, I set `EPOCHS = 10` and `rate = 0.001`, which 
 
 ## Test Model on New Images
 I found these 5 German traffic signs on Google:
+
 ![alt text][image2]
 ![alt text][image3]
 ![alt text][image4]
@@ -70,8 +71,16 @@ Here are the results of the prediction:
 | Slippery Road      | Wild Animals Crossing |
 | Speed Limit 30km/h | Speed Limit 30km/h    |
 
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This is lower than the accuracy on the test set of 93.5%. The incorrectly identified sign was the Slippery Road sign. This sign could have been difficult to identify because it features a fairly intricate shape of a car sliding. The other signs are easier because the shapes are relatively simple. The network mistook the intricate shape of the car for another detailed shape found in the wild animal crossing sign.
 
-
+For the Children Crossing sign, the top five soft max probabilites were:
+| Probability | Prediction                            | 
+|:-----------:|:-------------------------------------:| 
+| 0.99999690  | Children Crossing                     |
+| 0.00000171  | Dangerous Curve to the Right          |
+| 0.00000089  | Road Narrows on the Right             |
+| 0.00000049  | Bicycles Crossing                     |
+| 0.00000001  | Right-of-way at the Next Intersection |
 
 
 
